@@ -1,11 +1,13 @@
 // let counter = 0;
 
-function redirect(url){
+function redirect(url) {
     window.open(url, '_blank').focus();
 }
-
-const o=document.getElementById("scroll");
-o.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})});
+function scroll_to_up() {
+    window.scrollTo({top:0,behavior:"smooth"})
+}
+// const o=document.getElementById("scroll");
+// o.addEventListener("click",()=>{});
 // document.addEventListener("scroll",()=>{const e=window.pageYOffset;let t;e<=600?t=1-e/600:t=0,document.getElementById("scroll-tip-cont").style.opacity=String(t)},{passive:!0,capture:!0});
 
 // document.addEventListener('scroll', () => {
