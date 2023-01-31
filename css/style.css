@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+
+/*----------< GLOBALS STYLE >----------*/
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 20px;
+
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/*----------< DIFFERENT STYLE >----------*/
+.md-0 {
+    margin: 0;
+}
+
+.logo {
+    width: 224px;
+    height: 224px;
+    margin-bottom: 1rem;
+}
+
+.border-3 {
+    border-radius: 3rem;
+}
+
+.scroll {
+    fill: #151515;
+}
+
+
+/*----------< POSITIONING >----------*/
+.full-screen {
+    width: 100%;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.content-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*----------< BUTTONS >----------*/
+.btn {
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    color: #d1d1d1;
+    font-size: 1.2em;
+    font-weight: 200;
+    transition: all 0.2s;
+    margin: 0.25rem;
+    border-bottom: 0 solid #eee;
+    cursor:pointer;
+}
+
+.btn:active{
+  transform: scaleX(0.9) translateY(0.25rem);
+}
+
+
+.btn-telegram {
+  background: #3c94d3;
+}
+.btn-telegram:not(:active){
+  border-bottom: 0.25rem solid #28536d;
+}
+
+
+.btn-discord {
+  background: #6955c7;
+}
+.btn-discord:not(:active){
+  border-bottom: 0.25rem solid #302264;
+}
+
+
+.btn-github {
+  background: #6d6d6d;
+}
+.btn-github:not(:active){
+  border-bottom: 0.25rem solid #373737;
+}
+
+
+.btn-gitlab {
+  background: #a45215;
+}
+.btn-gitlab:not(:active){
+  border-bottom: 0.25rem solid #713610;
+}
+
+
+.btn-instagram {
+  background: #ba449f;
+}
+.btn-instagram:not(:active){
+  border-bottom: 0.25rem solid #6b1756;
+}
+
+
+/*----------< TEXT STYLE >----------*/
+.text-accent-red {
+    color: #eb4144;
+    text-decoration: underline dotted white 4px;
+    text-underline-position: from-font;
+}
+
+.text-accent-light {
+    color: #ffffff;
+}
+
+.big-text {
+    font-size: 2.8rem;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+
+/*----------< BACKGROUNDS >----------*/
+.bg-dark {
+    background-color: #151515;
+}
+
+.bg-white {
+    background-color: #dfdfdf;
+}
+
+.bg-dark-blue {
+    background-color: #21699b;
+}
+
+.bg-blue-purple {
+    background-color: #523eb0;
+}
+
+.bg-dark-orange {
+    background-color: #b06d3e;
+}
+
+.bg-pink-gradient {
+    background: radial-gradient(circle at 30% 107%, #beb871 0%, #bcb670 5%, #be4337 45%, #95196f 60%,#285AEB 90%);
+}
+
+
+/*----------< DUNGEON >----------*/
+.video {
+    min-width: 100%;
+    min-height: 100vh;
+}
