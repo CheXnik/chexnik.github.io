@@ -36,7 +36,7 @@ function hru_hru(){
 
     if(button.dataset.count === "10"){
         button.textContent = "Этот DUNGEON нашёл своего DUNGEON MASTER!!!"
-        play_sound('Fucking_slaves.mp3');
+        play_sound('Slaves.mp3');
         button.onclick = redirect
     }
 }
