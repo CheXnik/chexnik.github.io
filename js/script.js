@@ -1,22 +1,56 @@
-// let counter = 0;
+let counter = 0;
+
+
+function play_sound(sound_name) {
+    let audio = new Audio();
+    audio.preload = 'auto';
+    audio.src = 'sounds/' + sound_name;
+    audio.play();
+}
+
 
 function redirect(url) {
+    play_sound('click.mp3')
     window.open(url, '_blank').focus();
 }
+
+
 function scroll_to_up() {
+    play_sound('click.mp3')
     window.scrollTo({top:0,behavior:"smooth"})
 }
-// const o=document.getElementById("scroll");
-// o.addEventListener("click",()=>{});
 // document.addEventListener("scroll",()=>{const e=window.pageYOffset;let t;e<=600?t=1-e/600:t=0,document.getElementById("scroll-tip-cont").style.opacity=String(t)},{passive:!0,capture:!0});
 
-// document.addEventListener('scroll', () => {
-//     let offset = window.scrollY;
-//     const start = 7927;
-//     const stop = 1;
-//
-//     if (offset >= start && counter <= stop) {
-//         window.scrollTo(0,start)
-//         counter += 1;
-//     }
-// });
+
+function hru_hru(){
+    play_sound('click.mp3')
+
+    let button = document.getElementById('mybutton');
+    let fon = document.getElementById('fon');
+    let text_counter = document.getElementById('text_counter')
+
+    text_counter.textContent = 'Нахрюканно ' + (parseInt(button.dataset.count) + 1).toString() + '/10🐷';
+    button.dataset.count = (parseInt(button.dataset.count) + 1).toString();
+
+    fon.style.opacity = (1 - parseInt(button.dataset.count)/10).toString();
+
+    if(button.dataset.count === "10"){
+        button.textContent = "Этот DUNGEON нашёл своего DUNGEON MASTER!!!"
+        play_sound('Fucking_slaves.mp3');
+        button.onclick = redirect
+    }
+}
+
+document.addEventListener('scroll', () => {
+    let offset = window.scrollY;
+    const start = 7008;
+    const stop = 200;
+
+    if (offset >= start && counter <= stop) {
+        window.scrollTo(0,start)
+        counter += 1;
+    }
+});
+
+
+

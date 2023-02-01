@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>CheXnik🎃</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="media/favicon.png">
 </head>
 <body>
     <div class="full-screen flex flex-col content-center bg-dark">
-        <img alt="Logo" src="media/logo-400x400.webp" class="logo border-3">
-        <div class="flex flex-col landscape:flex-col lg:landscape:flex-col lg:portrait:flex-col content-center">
+        <img alt="Logo" src="media/logo-400x400.webp" class="logo mb-1 border-radius">
+        <div class="flex flex-col content-center">
             <h1 class="cursor-default md-0">
                 Hi! I'm <span class="text-accent-red big-text">CheXnik</span>!
             </h1>
@@ -18,9 +19,10 @@
             </p>
         </div>
     </div>
+
     <div class="full-screen flex flex-col content-center bg-dark-blue">
         <img alt="Logo" src="media/Telegram.svg" class="logo">
-        <div class="flex flex-col landscape:flex-col lg:landscape:flex-col lg:portrait:flex-col content-center">
+        <div class="flex flex-col content-center">
             <h1 class="cursor-default md-0">
                 Here I am on <span class="text-accent-light big-text">Telegram</span>
             </h1>
@@ -30,9 +32,10 @@
         </div>
         <a class="btn btn-telegram" onclick="redirect('https://t.me/chexnik')">Go to Telegram</a>
     </div>
+
     <div class="full-screen flex flex-col content-center bg-blue-purple">
         <img alt="Logo" src="media/Discord.svg" class="logo">
-        <div class="flex flex-col landscape:flex-col lg:landscape:flex-col lg:portrait:flex-col content-center">
+        <div class="flex flex-col content-center">
             <h1 class="cursor-default md-0">
                 Here I am on <span class="text-accent-light big-text">Discord</span>
             </h1>
@@ -42,9 +45,10 @@
         </div>
         <a class="btn btn-discord" onclick="redirect('https://discord.com/users/517634073942949889')">Go to Discord</a>
     </div>
+
     <div class="full-screen flex flex-col content-center bg-dark">
         <img alt="Logo" src="media/Github.svg" class="logo">
-        <div class="flex flex-col landscape:flex-col lg:landscape:flex-col lg:portrait:flex-col content-center">
+        <div class="flex flex-col content-center">
             <h1 class="cursor-default md-0">
                 Here I am on <span class="text-accent-light big-text">Github</span>
             </h1>
@@ -54,9 +58,10 @@
         </div>
         <a class="btn btn-github" onclick="redirect('https://github.com/CheXnik')">Go to Github</a>
     </div>
+
     <div class="full-screen flex flex-col content-center bg-dark-orange">
         <img alt="Logo" src="media/Gitlab.svg" class="logo">
-        <div class="flex flex-col landscape:flex-col lg:landscape:flex-col lg:portrait:flex-col content-center">
+        <div class="flex flex-col content-center">
             <h1 class="cursor-default md-0">
                 Here I am on <span class="text-accent-light big-text">Gitlab</span>
             </h1>
@@ -66,9 +71,10 @@
         </div>
         <a class="btn btn-gitlab" onclick="redirect('https://gitlab.com/CheXnik')">Go to Gitlab</a>
     </div>
+
     <div class="full-screen flex flex-col content-center bg-pink-gradient">
         <img alt="Logo" src="media/Instagram.svg" class="logo">
-        <div class="flex flex-col landscape:flex-col lg:landscape:flex-col lg:portrait:flex-col content-center">
+        <div class="flex flex-col content-center">
             <h1 class="cursor-default md-0">
                 Here I am on <span class="text-accent-light big-text">Instagram</span>
             </h1>
@@ -78,20 +84,38 @@
         </div>
         <a class="btn btn-instagram" onclick="redirect('https://www.instagram.com/nik_p14/')">Go to Instagram</a>
     </div>
+
     <div class="full-screen flex flex-col content-center bg-dark">
-        <svg id="scroll" width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" class="logo bg-white border-3 scroll" onclick="scroll_to_up()">
+        <svg id="scroll" width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" class="logo bg-white border-radius scroll" onclick="scroll_to_up()">
             <path d="M96 61.7142L100.849 56.8655C98.171 54.1875 93.829 54.1875 91.1513 56.8655L96 61.7142ZM89.1429 130.286C89.1429 134.073 92.2128 137.143 96 137.143C99.7872 137.143 102.857 134.073 102.857 130.286H89.1429ZM63.7227 84.2942C61.0448 86.9719 61.0448 91.3138 63.7227 93.9915C66.4006 96.6693 70.7424 96.6693 73.4201 93.9915L63.7227 84.2942ZM118.58 93.9915C121.258 96.6693 125.6 96.6693 128.277 93.9915C130.955 91.3138 130.955 86.9719 128.277 84.2942L118.58 93.9915ZM89.1429 61.7142V130.286H102.857V61.7142H89.1429ZM73.4201 93.9915L100.849 66.5629L91.1513 56.8655L63.7227 84.2942L73.4201 93.9915ZM91.1513 66.5629L118.58 93.9915L128.277 84.2942L100.849 56.8655L91.1513 66.5629ZM164.571 96C164.571 133.871 133.871 164.571 96"></path>
         </svg>
-        <div class="flex flex-col landscape:flex-col lg:landscape:flex-col lg:portrait:flex-col content-center">
+        <div class="flex flex-col content-center">
             <h1 class="cursor-default md-0">
                 <span class="text-accent-light big-text">And do it again!</span>
             </h1>
             <p class="cursor-default text-accent-light">
-                Dungeon coming soon...👀
+                Only dungeon below✊🏻
             </p>
         </div>
         <a id="scroll" class="btn btn-github" onclick="scroll_to_up()">Scroll up</a>
     </div>
+
+    <div class="full-screen flex-col flex content-center">
+        <video class="video" autoplay muted loop>
+            <source src="media/sh.mp4" type="video/mp4">
+        </video>
+        <div class="fon" id="fon"></div>
+        <div class="flex flex-col content-center nahruk mb-1 border-radius">
+            <h1 class="cursor-default md-0">
+                <span class="text-accent-light big-text">Нахрюкай 10 раз ⤦</span>
+            </h1>
+            <p id="text_counter" class="cursor-default text-accent-light">
+                Нахрюканно 0/10🐷
+            </p>
+        </div>
+        <a id="mybutton" data-count="0" onclick="hru_hru()" class="btn btn-dungeon">Нахрюкать🐽</a>
+    </div>
+
 <script type="application/javascript" src="js/script.js"></script>
 </body>
 </html>
