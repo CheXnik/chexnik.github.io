@@ -4,7 +4,7 @@ let counter = 0;
 function play_sound(sound_name) {
     let audio = new Audio();
     audio.preload = 'auto';
-    audio.src = 'sounds/' + sound_name;
+    audio.src = 'chexnik.github.io/sounds/' + sound_name;
     audio.play();
 }
 
@@ -43,7 +43,8 @@ function hru_hru(){
 
 document.addEventListener('scroll', () => {
     let offset = window.scrollY;
-    const start = 7008;
+    const start = Math.round(window.innerHeight) * 6;
+    console.log(start)
     const stop = 200;
 
     if (offset >= start && counter <= stop) {
