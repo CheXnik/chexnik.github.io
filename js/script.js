@@ -1,10 +1,11 @@
 let counter = 0;
-
+// import sound_click from 'sounds/click.mp3'
+// import sound_slave from 'sounds/Slaves.mp3'
 
 function play_sound(sound_name) {
     let audio = new Audio();
     audio.preload = 'auto';
-    audio.src = 'chexnik.github.io/sounds/' + sound_name;
+    audio.src = 'sounds/' + sound_name;
     audio.play();
 }
 
@@ -37,7 +38,7 @@ function hru_hru(){
     if(button.dataset.count === "10"){
         button.textContent = "Этот DUNGEON нашёл своего DUNGEON MASTER!!!"
         play_sound('Slaves.mp3');
-        button.onclick = redirect
+        button.onclick = "redirect('https://t.me/chexnik')"
     }
 }
 
@@ -45,7 +46,7 @@ document.addEventListener('scroll', () => {
     let offset = window.scrollY;
     const start = Math.round(window.innerHeight) * 6;
     console.log(start)
-    const stop = 200;
+    const stop = 100;
 
     if (offset >= start && counter <= stop) {
         window.scrollTo(0,start)
