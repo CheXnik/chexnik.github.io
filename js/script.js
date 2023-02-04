@@ -46,7 +46,7 @@ document.addEventListener('scroll', () => {
     let offset = window.scrollY;
     const start = Math.round(window.innerHeight) * 6;
     console.log(start)
-    const stop = 100;
+    const stop = 200;
 
     if (offset >= start && counter <= stop) {
         window.scrollTo(0,start)
