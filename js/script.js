@@ -5,7 +5,7 @@ let counter = 0;
 function play_sound(sound_name) {
     let audio = new Audio();
     audio.preload = 'auto';
-    audio.src = 'sounds/' + sound_name;
+    audio.src = 'chexnik.github.io/sounds/' + sound_name;
     audio.play();
 }
 
