@@ -1,6 +1,4 @@
 let counter = 0;
-// import sound_click from 'sounds/click.mp3'
-// import sound_slave from 'sounds/Slaves.mp3'
 
 function play_sound(sound_name) {
     let audio = new Audio();
@@ -42,17 +40,18 @@ function hru_hru(){
     }
 }
 
+
 document.addEventListener('scroll', () => {
     let offset = window.scrollY;
     const start = Math.round(window.innerHeight) * 6;
     console.log(start)
-    const stop = 200;
+    const stop = 100;
 
     if (offset >= start && counter <= stop) {
-        window.scrollTo(0,start)
+        window.scrollTo({
+            top: start,
+            behavior: 'smooth'
+        });
         counter += 1;
     }
 });
-
-
-
