@@ -1,4 +1,5 @@
 let counter = 0;
+let scrolling = false;
 
 function play_sound(sound_name) {
     let audio = new Audio();
@@ -44,14 +45,15 @@ function hru_hru(){
 document.addEventListener('scroll', () => {
     let offset = window.scrollY;
     const start = Math.round(window.innerHeight) * 6;
-    const stop = 100;
+    console.log(start)
+    const stop = 200;
 
-    if (offset >= start && counter <= stop) {
+    if (!scrolling && offset >= start && counter <= stop) {
+        scrolling = true;
         setTimeout(() => {
-            window.scrollTo({
-                top: start});
+            window.scrollTo(0, start);
             counter += 1;
-        }, 200)
+            scrolling = false;
+        }, 200);
     }
 });
-
