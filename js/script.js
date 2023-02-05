@@ -47,9 +47,11 @@ document.addEventListener('scroll', () => {
     const stop = 100;
 
     if (offset >= start && counter <= stop) {
-        window.scrollTo({
-            top: start});
-        counter += 1;
+        setTimeout(() => {
+            window.scrollTo({
+                top: start});
+            counter += 1;
+        }, 200)
     }
-}, 200);
+});
 
