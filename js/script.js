@@ -48,9 +48,8 @@ document.addEventListener('scroll', () => {
 
     if (offset >= start && counter <= stop) {
         window.scrollTo({
-            top: start,
-            behavior: 'smooth'
-        });
+            top: start});
         counter += 1;
     }
-});
+}, 200);
+
