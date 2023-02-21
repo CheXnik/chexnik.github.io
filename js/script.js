@@ -45,11 +45,9 @@ function hru_hru(){
 document.addEventListener('scroll', () => {
     let offset = window.scrollY;
     const start = Math.round(window.innerHeight) * 6;
-    console.log(start)
     const stop = 200;
 
     if (!scrolling && offset >= start && counter <= stop) {
-        scrolling = true;
         setTimeout(() => {
             window.scrollTo(0, start);
             counter += 1;
