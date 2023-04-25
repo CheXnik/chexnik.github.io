@@ -42,16 +42,33 @@ function hru_hru(){
 }
 
 
-document.addEventListener('scroll', () => {
-    let offset = window.scrollY;
-    const start = Math.round(window.innerHeight) * 6;
-    const stop = 200;
 
-    if (!scrolling && offset >= start && counter <= stop) {
-        setTimeout(() => {
-            window.scrollTo(0, start);
-            counter += 1;
-            scrolling = false;
-        }, 200);
+// Get the block element by ID
+var block = document.querySelector('#stop-scrolling');
+
+function checkBlockInView() {
+  var blockPosition = block.getBoundingClientRect().top + window.pageYOffset;
+
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+  if (scrollPosition >= blockPosition) {
+    window.addEventListener('mousemove', function() {});
+    window.addEventListener('wheel', handleWheelEvent);
+  }else if(scrollPosition <= blockPosition){
+    console.log('Not on Scrolled to block with ID:', block.id);
+    window.removeEventListener('wheel', handleWheelEvent);
+  }
+}
+
+window.addEventListener('scroll', checkBlockInView);
+
+let scrollCount = 0;
+
+function handleWheelEvent() {
+    
+    scrollCount++;
+    
+    if(scrollCount > 70){
+        document.querySelector('#hruk-block').style.display = "flex"
     }
-});
+}
